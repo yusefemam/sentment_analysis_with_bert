@@ -1,9 +1,8 @@
-#i will use pipline from transformers to use the sentiment analysis model
 from transformers import pipeline
 import sys
 
 
-def initialize_model(): #initialize the model
+def initialize_model():
     try:
         return pipeline("sentiment-analysis")
     except Exception as e:
